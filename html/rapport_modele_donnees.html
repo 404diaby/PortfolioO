@@ -14,6 +14,7 @@
    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+  
   }
   body {
     font-family: Arial, sans-serif;
@@ -24,6 +25,7 @@
 html{ 
 scroll-behavior: smooth;
   }
+
   
   .container{
   	/* overflow-y: scroll;
@@ -35,9 +37,16 @@ scroll-behavior: smooth;
     
    
   }
+  section{
+
+    
+  padding-bottom: 40px;
+  }
+  section > * {
+    padding-bottom: 35px;
+  }
 .container > *{
   padding: 20px;
-  background: green;
   width:90%;
   margin:auto;
 
@@ -101,9 +110,7 @@ text-decoration:none;
 	color: white;
 }	
 
-section{
-	background-color: yellow;
-}
+
 .carousel{
 	overflow: hidden;
 	box-sizing: border-box;
@@ -125,7 +132,7 @@ background-repeat: no-repeat;
 background-size: contain;
 */
 
-}
+
 
 /* cell number */
 /*.carousel-cell:before {
@@ -135,6 +142,7 @@ background-size: contain;
 	
 background-color: #baba ;
 }
+
 .flickity-button {
   background: #333;
 }
@@ -158,6 +166,11 @@ background-color: #baba ;
 .flickity-prev-next-button.next {
   right: -40px;
 }
+a{
+  text-decoration: none;
+  color: #FC6E47;
+}
+
 
 
 </style>
@@ -171,45 +184,39 @@ background-color: #baba ;
 		<section>
 			<h3>Quelques images : </h3>
 			<div class="carousel" data-flickity='{ "pageDots": false }' >
-				<div class="carousel-cell"> Interface Utilisateur</div>
-				<div class="carousel-cell" style="background-image:url(../img/rapportmodeldonneescapture1.png)"></div>
-				<div class="carousel-cell"> Modèle de Données Relationnel</div>
-				<div class="carousel-cell" style="background-image:url(../img/rapportmodeldonneescapture2.png)" ></div>
-				<div class="carousel-cell">Résultat  sous format PDF</div>
-				<div class="carousel-cell"  style="background-image:url(../img/rapportmodeldonneescapture3.png)" ></div>
-				<div class="carousel-cell"  style="background-image:url(../img/rapportmodeldonneescapture4.png)" ></div>
+				<div class="carousel-cell" style="display: flex; align-items: center; justify-content: center;" > Interface Utilisateur</div>
+				<div class="carousel-cell" style="background-image:url(../img/rapportmodeldonneescapture1.png); background-repeat: no-repeat; background-size: contain;background-position-x: center;"></div>
+				<div class="carousel-cell" style="display: flex; align-items: center; justify-content: center;" > Modèle de Données Relationnel</div>
+				<div class="carousel-cell" style="background-image:url(../img/rapportmodeldonneescapture2.png);  background-repeat: no-repeat; background-size: contain;background-position-x: center;" ></div>
+				<div class="carousel-cell" style="display: flex; align-items: center; justify-content: center;">Résultat  sous format PDF</div>
+				<div class="carousel-cell"  style="background-image:url(../img/rapportmodeldonneescapture3.png); background-repeat: no-repeat; background-size: contain;background-position-x: center;" ></div>
+				<div class="carousel-cell"  style="background-image:url(../img/rapportmodeldonneescapture4.png); background-repeat: no-repeat; background-size: contain; background-position-x: center;" ></div>
 		  </div>
 		</section>
 		<section>
 							
 			<h3>Informations :</h3>
-			<p><h4>Contexte</h4>
+			<h4>Contexte</h4>
 			<p>L’entreprise souhaite avoir un outil interne pour générer des rapports de modèle de données pour des projets avec une base de données postgreSQL pour éventuellement les mettre à disposition de ses clients. Un modèle de données est  la documentation d’une base de données. Il contient un schéma de la base de données, un dictionnaire de données, le descriptif des tables et leur relation entre elles. 
 OKTEO gère beaucoup de technologies différentes aussi bien dans  le développement que dans le type de base de données. Aujourd’hui l’entreprise souhaiterait avoir son propre outil pour la génération automatique de rapports d’une base de données PostgreSQL.
 			</p>
-			<h4>Objectifs</h4>
+			<h4>Objectifs :</h4>
 			<p>
 				Une application qui permet la génération automatique d’un rapport de model de base de données PostgreSQL
 			</p>
-			
-				
-				Technologies utilisées : Java
-				
-				 
-				 Participant(s) au projet : moi-même
+				<h4>Participant(s) au projet : </h4><p>2 collègue de la section SISR (réseaux), un collègue de la section SLAM et moi-même</p> 
 			<h4>Cible de l’application</h4>
 			<p>L’application est destinée à l’entreprise aux employés en interne mais le document généré peut être présenté à ses clients.</p>
-
-				 <h4>Période :       de décembre 2021            à    avril 2022</h4>
-				 
-				 <h4>Temps total estimé : 16 heures.</h4></p>
+      
+		
 		</section>
 	<section>
 			<h3>LES DOCUMENTS</h3>
 			<ul>
-				<li><a href="../pdf/rappormodeleDonnees.pdf">Exemple de résultat  au format PDF</a> </li>
+				<li><a href="../pdf/rappormodeleDonnees.pdf" target="_blank">Exemple de résultat  au format PDF</a> </li>
 			</ul>
 		</section>
+ 
 	</div>
 	<a href="#" class="close" > <i class="fa-solid fa-arrow-up"></i></a>
 <a href="../index.html" class="return" ><i class="fa-solid fa-xmark"></i></a>

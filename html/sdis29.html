@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +14,7 @@
    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+  
   }
   body {
     font-family: Arial, sans-serif;
@@ -23,6 +25,7 @@
 html{ 
 scroll-behavior: smooth;
   }
+
   
   .container{
   	/* overflow-y: scroll;
@@ -34,9 +37,16 @@ scroll-behavior: smooth;
     
    
   }
+  section{
+
+    
+  padding-bottom: 40px;
+  }
+  section > * {
+    padding-bottom: 35px;
+  }
 .container > *{
   padding: 20px;
-  background: green;
   width:90%;
   margin:auto;
 
@@ -100,9 +110,7 @@ text-decoration:none;
 	color: white;
 }	
 
-section{
-	background-color: yellow;
-}
+
 .carousel{
 	overflow: hidden;
 	box-sizing: border-box;
@@ -111,10 +119,13 @@ section{
 	width: 100%; 
   height: 360px;
   margin-right: 20px;
-color: #FC6E47;
+/* color: #FC6E47;*/
 border-radius: 10px;
-background-color: red;
-
+  color: white;
+	text-transform: uppercase; 
+letter-spacing: 4px;
+font-size: 24px;
+	  text-align: center;
 cursor:pointer;
 /*background-position: center center;
 background-repeat: no-repeat;
@@ -122,18 +133,16 @@ background-size: contain;
 */
 
 
-counter-increment: gallery-cell;
-}
 
 /* cell number */
-.carousel-cell:before {
+/*.carousel-cell:before {
   display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+		}*/
+
+	
+background-color: #baba ;
 }
+
 .flickity-button {
   background: #333;
 }
@@ -157,6 +166,11 @@ counter-increment: gallery-cell;
 .flickity-prev-next-button.next {
   right: -40px;
 }
+a{
+  text-decoration: none;
+  color: #FC6E47;
+}
+
 
 
 </style>
@@ -166,67 +180,72 @@ counter-increment: gallery-cell;
 <body>
 	
 	<div class="container">
-		<h1>SDIS29 	</h1>
+		<h1>SDIS29	</h1>
 		<section>
-			<h3>Aperçu de l'application : </h3>
+			<h3>Quelques images : </h3>
 			<div class="carousel" data-flickity='{ "pageDots": false }' >
-				<div class="carousel-cell"></div>
-				<div class="carousel-cell"></div>
-				<div class="carousel-cell"></div>
-				<div class="carousel-cell"></div>
-				<div class="carousel-cell"></div>
-		  </div>
+				<div class="carousel-cell" style="display: flex; align-items: center; justify-content: center;" > Interface Utilisateur</div>
+				<div class="carousel-cell" style="background-image:url(../img/sdis29/sdis29capture1.PNG); background-repeat: no-repeat; background-size: contain;background-position-x: center;"></div>
+        <div class="carousel-cell" style="background-image:url(../img/sdis29/sdis29capture2.PNG); background-repeat: no-repeat; background-size: contain;background-position-x: center;"></div>
+        <div class="carousel-cell" style="background-image:url(../img/sdis29/sdis29capture3.PNG); background-repeat: no-repeat; background-size: contain;background-position-x: center;"></div>
+        <div class="carousel-cell" style="background-image:url(../img/sdis29/sdis29capture4.PNG); background-repeat: no-repeat; background-size: contain;background-position-x: center;"></div>
+        <div class="carousel-cell" style="display: flex; align-items: center; justify-content: center;" >Diagramme des cas d'utilisations</div>
+				<div class="carousel-cell" style="background-image:url(../img/sdis29/Capture.PNG);  background-repeat: no-repeat; background-size: contain;background-position-x: center;" ></div>
+        <div class="carousel-cell" style="display: flex; align-items: center; justify-content: center;" > Modèle de Données Relationnel</div>
+				<div class="carousel-cell" style="background-image:url(../img/sdis29/sdis29capture0.png);  background-repeat: no-repeat; background-size: contain;background-position-x: center;" ></div>
+			</div>
 		</section>
 		<section>
+							
 			<h3>Informations :</h3>
-			<p><h4>Contexte</h4>
+			<h4>Contexte</h4>
+			<p>
+        Rattachée au ministère de l'Intérieur, la Direction de la Sécurité Civile (DSC) est la structure centrale responsable de 
+      la gestion des risques en France pour les accidents de la vie courante ou les catastrophes majeures. Parmi ses compétences figure la gestion des services départementaux d’incendie et de secours (SDIS).
+      Dans chaque département, la lutte contre les incendies, le secours aux personnes et la protection des biens et de 
+      l’environnement sont pris en charge par le SDIS qui regroupe différentes unités dont :
+      <ul>
+        <li>le CTA : centre de traitement de l’alerte qui reçoit les appels au secours et déclenche l’alerte,</li>
+        <li>le CODIS : centre opérationnel départemental d’incendie et de secours qui gère l’intervention (coordination, demande de renfort…),</li>
+        <li>les CIS : centres d’incendie et de secours (appelés familièrement "casernes") rattachés aux groupements 
+      territoriaux de Brest (12 CIS et 1 poste de secours), Concarneau (15 CIS), Morlaix (12 CIS et 2 postes de secours) et Quimper (22 CIS et 1 poste de secours).</li>
+      </ul>
+      Un véhicule de secours doit arriver en moins de 20 minutes sur les lieux de l’intervention n’importe où dans le département, suivant la directive du schéma départemental d’analyse et de couverture des risques. Pour ce faire, le 
+      départ du véhicule doit avoir lieu dans les 7 minutes qui suivent la réception de l’alerte.
+      Afin de répondre au mieux à cette contrainte, le SDIS 29 modernise son fonctionnement et notamment les moyens 
+      de transmission de l’alerte. Un jumelage avec le centre de Plymouth engagé dans une démarche analogue a permis 
+      d’enrichir la réflexion et fut l’occasion de sympathiques échanges. C’est une évolution extrêmement importante qui 
+      implique de nouveaux moyens matériels en informatique et la refonte du système d’information.
 
-				L'Arboretum de Versailles-Chèvreloup (78) est un parc planté de nombreuses espèces venant du monde entier, aménagé pour la promenade, un peu comme « un musée des arbres ».
-				
-				Il abrite une exceptionnelle collection d’arbres.
-				
-				Régulièrement des visites guidées sont proposées au public, ainsi que divers événements comme des conférences et des animations. Il est aussi possible de visiter librement le parc.
-				
-				<h4>Objectifs</h4>
-				
-				L'objectif du projet est de développer une application permettant de gérer les visites et d'obtenir un certain nombre de statistiques, comme le nombre de visiteurs par an. Cela permettra aux dirigeants d'avoir une vue globale des visites et de les guider dans les actions à mener pour promouvoir l’arboretum.
-				
-				(On pourrait aussi avoir un paragraphe "Besoins" qui décrit les besoins des utilisateurs et/ou de l'organisation)
-				
-				Technologies utilisées
-				
-				Java (application en mode console)
-				
-				 Base de données MySQL
-				 Participant(s) au projet : moi-même
-
-				 <h4>Période :       de décembre 2021            à    avril 2022</h4>
-				 
-				 <h4>Temps total estimé : 16 heures.</h4></p>
-		</section>
+			</p>
+			<h4>Objectifs :</h4>
+			<p>
+        L'application présente les fonctionnalités suivantes : 
+        <ol>
+          <li>Connexion sécurisée à l’application</li>
+          <li>Modification du profil par le chef de centre ou par le pompier lui-même</li>
+          <li>Saisie des disponibilités par les pompiers volontaires</li>
+          <li>Établissement de la feuille de garde par les chefs de centres</li>
+        </ol>
+      </p>
+				<h4>Participant(s) au projet : </h4><p>2 collègue de la section SISR (réseaux), un collègue de la section SLAM et moi-même</p> 
+			<h4>Cible de l’application</h4>
+			<p>L’application est destinée aux pompiers volontaires et aux chefs de centre.</p>
+      
 		
-		<section>
+		</section>
+	<section>
 			<h3>LES DOCUMENTS</h3>
 			<ul>
-				<li><a href="">Le cahier</a></li>
-				<li><a href="">Le script SQL de Base de données</a></li>
-				<li><a href="">La documentation</a></li>
-				<li><a href="">Mode  opératoire</a> </li>
-			</ul>
+        <li><a href="../pdf/sdis29/AP3Sdis29.pdf" target="_blank  ">Cahier des charges</a></li>
+        <li> <a href="../pdf/sdis29/sdis29mariaDb2022.sql">Script SQL</a></li>
+        <li><a href="../pdf/sdis29/Documentation.pdf" target="_blank">Documentation</a></li>
+        <li><a href="../pdf/sdis29/Mentions légales.pdf" target="_blank">Mentions légales</a></li>
+        <li><a href="../pdf/sdis29/Mode operatoire.pdf" target="_blank"> Mode opératoire</a></li>
+        <li><a href="../pdf/sdis29/Projet SDIS29.pdf" target="_blank">Soustenance Orale</a></li>
+      </ul>
 		</section>
-		<section>
-			<h3>Résultat de la phase d'analyse :</h3>
-			<div class="carousel" data-flickity='{ "pageDots": false }' >
-				<div class="carousel-cell"></div>
-				<div class="carousel-cell"></div>
-				<div class="carousel-cell"></div>
-				<div class="carousel-cell"></div>
-				<div class="carousel-cell"></div>
-			  </div>
-		</section>
-		  
-		
-
+ 
 	</div>
 	<a href="#" class="close" > <i class="fa-solid fa-arrow-up"></i></a>
 <a href="../index.html" class="return" ><i class="fa-solid fa-xmark"></i></a>
