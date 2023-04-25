@@ -114,12 +114,11 @@ text-decoration:none;
 .carousel{
 	overflow: hidden;
 	box-sizing: border-box;
-}
-.carousel-cell {
-	width: 100%; 
+}.carousel-cell {
+	width: 800px; 
   height: 360px;
-  margin-right: 20px;
 /* color: #FC6E47;*/
+margin-left: 100px;
 border-radius: 10px;
   color: white;
 	text-transform: uppercase; 
@@ -127,21 +126,22 @@ letter-spacing: 4px;
 font-size: 24px;
 	  text-align: center;
 cursor:pointer;
-/*background-position: center center;
-background-repeat: no-repeat;
-background-size: contain;
-*/
-
-
-
-/* cell number */
-/*.carousel-cell:before {
-  display: block;
-		}*/
-
-	
+display: flex;
+justify-content: center;
+align-items: center;	
 background-color: #baba ;
 }
+
+div.carousel-cell > * {
+margin: auto;
+width: 80%;
+overflow: hidden ;
+max-height:100%;
+user-select:none;
+pointer-events: none;
+}
+
+
 
 .flickity-button {
   background: #333;
